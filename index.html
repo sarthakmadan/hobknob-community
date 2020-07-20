@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="author" content="sarthakmadann@gmail.com">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    	<link rel="stylesheet" href="css/custom.css">
+
+    	<title>Hobknob</title>
+	</head>
+
+	<body>
+    	<nav class="navbar navbar-expand-lg fixed-top" id="navMain">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        		<span class="navbar-toggler-icon">   
+    				<i class="fa fa-navicon"></i>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        		<ul class="nav navbar-nav navbar-right mr-auto" id="navList">
+          			<a href="#page-top" class="navbar-brand"></a>
+        		</ul>
+        		<ul class="navbar-nav">
+          			<li class="nav-item active">
+           				<a class="nav-link" href="#page-top">HOME</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="#community">JOIN THE COMMUNITY</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="#contact">CONTACT</a>
+          			</li>
+    			</ul>
+      		</div>
+    	</nav>
+
+    	<div class="icon-bar">
+        <a href="https://www.instagram.com/hobknob.co/" class="facebook">ig</a> 
+  			<a href="https://www.facebook.com/hobknob.community/" class="twitter">fb</a> 
+  			<a href="https://twitter.com/HobknobC" class="google">tw</a>
+		  </div>
+
+    	<div class="container-fluid" id="page-top">
+        <img src="assets/images/logo_standard.png" class="img-fluid" alt="Hobknob Text Logo" id="hobknobLogoStd">
+		  </div>
+
+    	<div class="container-fluid" id="community">
+      		<div class="row">
+        		<p id="headerCommunity"> JOIN THE COMMUNITY!</p>
+      		</div>
+  			<div class="row">
+        		<div class="col-lg">
+          			<form action="https://getsimpleform.com/messages?form_api_token=827d049377b7a02cc23dccaffa65a6a8" method="post" id="formContact">
+            			<p id=textFormCommunity>We would love to know a bit about you, please fill the details below.</p>
+            			<div class="form-group">
+              				<input type="text" name="Name" aria-describedby="emailHelp" placeholder="Hello happy soul, what is your name?">
+            			</div>
+            			<div class="form-group">
+              				<input type="email" name="Email" aria-describedby="emailHelp" placeholder="Great, now what's your email?">
+            			</div>
+            			<div class="form-group row">
+          					<input class="form-row" type="tel" name="Phone" aria-describedby="emailHelp" placeholder="Your phone number?">
+              				<input class="form-row" type="number" name="Age" aria-describedby="emailHelp" placeholder="Your age?">
+            			</div>
+            			<div id="commSelector">
+              				<p id="formRadio">You want to belong to the community as?</p>
+          					<label class="radio">Audience
+          						<input type="radio" name="membertype" value="audience">
+              					<span class="checkround"></span>
+              				</label>
+              				<label class="radio">Performer | Human Book (Storyteller)
+              					<input type="radio" checked="checked" name="membertype" value="performer">
+              					<span class="checkround"></span>
+          					</label>
+            			</div>
+            			<div class="form-group">
+          					<input type="text" name="Introduction" aria-describedby="emailHelp" placeholder="Introduce yourself to the community (200 words minimum)">
+        				</div>
+            			<div class="form-group">
+              				<input type="url" name="Instagram" aria-describedby="emailHelp" placeholder="instagram.com/">
+            			</div>
+            			<div class="form-group">
+              				<input type="url" name="SocialProfile" aria-describedby="emailHelp" placeholder="Other social media profiles" />
+            			</div>
+            			<div id="formButtonContainer">
+            				<input type='submit' value='SUBMIT' id="formButton" onclick="submitForm()" />
+            			</div>
+          			</form>
+        		</div>
+        		<div class="col-lg" id="colCommGraph">
+          			<img src="assets/images/community.png" class="img-fluid" alt="Hobknob Community Graphic" id="hobknobGraphicCommunity">
+        		</div>
+      		</div>
+    	</div>
+
+    	<div class="container-fluid" id="contact">
+      		<div class="row">
+        		<p id="headerContact">CONTACT US</p>
+      		</div>
+      		<div class="row">
+    			<div class="col-md d-none d-lg-block"></div>
+    			<div class="col-md d-none d-lg-block"></div>
+    			<div class="col-md d-none d-lg-block"></div>
+        		<div class="col-md" id="contactRight">
+          			<p id="detailsContactHeader">Team Hobknob</p>
+          			<p id="detailsContact">Tel: +91 9888401190<br />Mail: belong@hobknob.co.in</p>
+        		</div>
+      		</div>
+    	</div>
+
+    	<div class="d-none d-lg-block" id="graphicDog1">
+  			<div id="graphicDog2">
+    			<img src="assets/images/dog.png" />
+  			</div>
+		</div>
+
+		<div id="footer">
+      		<div class="d-lg-none" id="graphicDogMd">
+      			<img src="assets/images/dog.png" class="img-fluid" alt="Hobknob Dog Graphic" id="hobknobGraphicDog">
+      		</div>
+      		<div id="sortedPandit">
+      			<p id="footerText">Website designed by <a href="https://www.instagram.com/thesortedpandit" id="tsplink">thesortedpandit</a></p>
+      		</div>
+    	</div>
+
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    	<script>
+    		document.onreadystatechange = function () {
+    			var state = document.readyState
+    			if (state == 'interactive') {
+    				document.getElementById('contents').style.visibility="hidden";
+    			} else if (state == 'complete') {
+    				setTimeout(function(){
+    					document.getElementById('interactive');
+    					document.getElementById('load').style.visibility="hidden";
+    					document.getElementById('contents').style.visibility="visible";
+    				},500);
+    			}
+    		}
+    	</script>
+    	<script>
+    		function submitForm(){
+				document.getElementById('formButton').value="SORTED!";
+			}
+		</script>
+  	</body>
+</html>
